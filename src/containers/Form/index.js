@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import FeedbackMessage from 'components/FeedbackMessage';
-import { StyledForm } from './styled';
+import Input from 'components/Form/Input';
+import {
+  StyledSubscription,
+  StyledForm,
+  StyledFormItem
+} from './styled';
 
 const Form = ({ env }) => {
   const [feedback, setFeedback] = useState('');
@@ -73,20 +78,22 @@ const Form = ({ env }) => {
   }
 
   return (
-    <StyledForm>
-      <form className="feedback-form" onSubmit={handleSubmit}>
-        <h1>Your Feedback</h1>
-        <input
-          className="text-input"
-          id="fullname-entry"
-          name="fullname-entry"
-          onChange={(event) => {
-            setFullName(event.target.value);
-          }}
-          placeholder="Enter your fullname here"
-          required
-          value={fullName}
-        />
+    <StyledSubscription>
+      <h1>Quero me candidatar</h1>
+
+      <StyledForm onSubmit={handleSubmit}>
+        <StyledFormItem>
+          <Input
+            name="fullname-entry"
+            onChange={(event) => {
+              setFullName(event.target.value);
+            }}
+            placeholder="Nome completo"
+            required
+            value={fullName}
+          />
+        </StyledFormItem>
+
         <textarea
           className="text-input"
           id="feedback-entry"
@@ -109,8 +116,8 @@ const Form = ({ env }) => {
             className="btn btn--submit"
           />
         </div>
-      </form>
-    </StyledForm>
+      </StyledForm>
+    </StyledSubscription>
   );
 };
 
