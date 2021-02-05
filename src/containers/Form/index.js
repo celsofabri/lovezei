@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import FeedbackMessage from 'components/FeedbackMessage';
 import Input from 'components/Form/Input';
+import TextArea from 'components/Form/TextArea';
 import {
   StyledSubscription,
   StyledForm,
@@ -89,21 +90,19 @@ const Form = ({ env }) => {
               setFullName(event.target.value);
             }}
             placeholder="Nome completo"
-            required
             value={fullName}
+            required
           />
         </StyledFormItem>
 
-        <textarea
-          className="text-input"
-          id="feedback-entry"
+        <TextArea
           name="feedback-entry"
           onChange={(event) => {
             setFeedback(event.target.value);
           }}
           placeholder="Enter your feedback here"
-          required
           value={feedback}
+          required
         />
         <div className="btn-group">
           <button className="btn btn--cancel" onClick={handleCancel}>
