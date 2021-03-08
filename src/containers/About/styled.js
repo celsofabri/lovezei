@@ -10,7 +10,7 @@ export const StyledAbout = styled.div`
 export const StyledAboutImage = styled.div`
   img {
     display: block;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 0;
     max-width: 100%;
     height: auto;
@@ -20,4 +20,9 @@ export const StyledAboutImage = styled.div`
 export const StyledAboutContent = styled.div`
   max-width: 960px;
   margin: 0 auto;
+
+  h3,
+  ul {
+    text-align: left;
+  }
 `;

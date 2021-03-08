@@ -16,21 +16,43 @@ const About = () => {
     <StyledAbout>
       <StyledWrapper>
         <StyledAboutContent>
-          <StyledTitle>Sobre o projeto</StyledTitle>
+          <StyledTitle>Processo seletivo - Mozão 2021</StyledTitle>
 
           <p>
-            Este projeto foi criado com o intuito exclusivo de
-            desencalhar o magnífico{' '}
-            <strong>Julio Pavani Lozovei</strong> amorosamente,
-            servindo como apresentação do mesmo e sua candidatura para
-            conhecer melhor este homem incrível.
+            Procuramos candidatas para ocupar a vaga de "Mozão" do{' '}
+            <strong>Julio Pavani Lozovei</strong>.
           </p>
+
+          <h3>Requisitos:</h3>
+
+          <ul>
+            <li>- Ser maior de 18 anos;</li>
+            <li>
+              - Preferencialmente a candidata deve residir na cidade
+              de Curitiba/PR ou região metropolitana;
+            </li>
+            <li>
+              - Estar interessada em um relacionamento sério. Nada de
+              poliamor;
+            </li>
+            <li>- Goste de cachorros;</li>
+            <li>- Respeitar diferentes crenças e/ou culturas.</li>
+          </ul>
         </StyledAboutContent>
         <StyledAboutImage>
           <img src={ImgAbout} alt="Julio Pavani Lozovei - Sobre" />
         </StyledAboutImage>
 
-        <StyledButton type="button">Conheça o Julio</StyledButton>
+        <StyledAboutContent>
+          <p>
+            Você possui os requisitos e se identificou com a vaga?
+            Conheça mais sobre o <strong>Julio</strong> e se inscreva
+            no processo :)
+          </p>
+          <StyledButton type="button">
+            Conheça mais sobre o Julio
+          </StyledButton>
+        </StyledAboutContent>
       </StyledWrapper>
     </StyledAbout>
   );
