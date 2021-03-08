@@ -2,13 +2,22 @@ import styled from 'styled-components';
 import BgAbout from 'assets/images/julio01.jpg';
 
 export const StyledAbout = styled.div`
-  width: 50%;
-  height: 100%;
-  padding: 50px;
-  background-image: url(${BgAbout});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  display: block;
+  padding: 100px 0;
+  text-align: center;
 `;
 
-export const StyledAboutTitle = styled.h2``;
+export const StyledAboutImage = styled.div`
+  img {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+  }
+`;
+
+export const StyledAboutContent = styled.div`
+  max-width: 960px;
+  margin: 0 auto;
+`;

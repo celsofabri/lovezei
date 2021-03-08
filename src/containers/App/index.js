@@ -1,13 +1,13 @@
 import React from 'react';
+import Intro from 'containers/Intro';
 import About from 'containers/About';
-import Form from 'containers/Form';
 import { StyledApp } from 'assets/global/styled';
 
 const App = ({ env }) => {
   return (
     <StyledApp>
+      <Intro />
       <About />
-      <Form env={env} />
     </StyledApp>
   );
 };
