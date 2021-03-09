@@ -2,6 +2,8 @@
 
 This project is a joke for a friend. You can see this project [clicking here!](https://projetomozao2021.com).
 
+![Projeto Mozão 2021](./screenshot.jpg)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## :checkered_flag: How to start
