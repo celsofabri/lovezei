@@ -12,6 +12,10 @@ export const StyledIntro = styled.section`
   background-size: cover;
 `;
 
+export const StyledHeader = styled.header`
+  display: block;
+`;
+
 export const StyledLogo = styled.h1`
   margin: 0;
   font-family: ${fonts.secondary};

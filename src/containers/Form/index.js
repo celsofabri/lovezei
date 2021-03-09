@@ -34,6 +34,21 @@ const Form = ({ env }) => {
 
   const senderEmail = 'celso.fabri@gmail.com';
 
+  const handleCancel = () => {
+    setFullName('');
+    setEmail('');
+    setCity('');
+    setState('');
+    setBirthdate('');
+    setSign('');
+    setWhatsapp('');
+    setTelegram('');
+    setFacebook('');
+    setInstagram('');
+    setTwitter('');
+    setMessage('');
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -116,7 +131,12 @@ const Form = ({ env }) => {
   };
 
   if (formSubmitted && formSubmitSuccessful) {
-    return <FeedbackMessage />;
+    return (
+      <FeedbackMessage
+        setFormSubmitSuccessful={setFormSubmitSuccessful}
+        handleCancel={handleCancel}
+      />
+    );
   }
 
   return (

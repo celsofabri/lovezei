@@ -1,12 +1,31 @@
 import React from 'react';
-import { StyledFeedback, StyledFeedbackMessage } from './styled';
+import { StyledButton } from 'assets/global/styled';
+import {
+  StyledFeedback,
+  StyledFeedbackContent,
+  StyledFeedbackMessage
+} from './styled';
 
-const FeedbackMessage = () => {
+const FeedbackMessage = ({
+  setFormSubmitSuccessful,
+  handleCancel
+}) => {
   return (
     <StyledFeedback>
-      <StyledFeedbackMessage>
-        Seus dados foram enviados com sucesso!
-      </StyledFeedbackMessage>
+      <StyledFeedbackContent>
+        <StyledFeedbackMessage>
+          Sua inscrição foi realizada com sucesso! Em breve, o Julio
+          entrará em contato com você :)
+        </StyledFeedbackMessage>
+        <StyledButton
+          onClick={() => {
+            setFormSubmitSuccessful(false);
+            handleCancel();
+          }}
+        >
+          Voltar
+        </StyledButton>
+      </StyledFeedbackContent>
     </StyledFeedback>
   );
 };

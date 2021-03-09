@@ -38,5 +38,14 @@ export const StyledFormGroup = styled.div`
 
   ${StyledFormItem} {
     width: ${(props) => (props.column ? `48.5%` : `100%`)};
+
+    @media screen and (max-width: 520px) {
+      width: 100%;
+      margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
   }
 `;

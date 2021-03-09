@@ -5,7 +5,7 @@ import {
   StyledLozoveiImage,
   StyledLozoveiContent
 } from './styled';
-import ImgLozovei from 'assets/images/julio02.jpg';
+import ImgLozovei from 'assets/images/julio03.jpg';
 
 const Lozovei = () => {
   return (
@@ -17,9 +17,10 @@ const Lozovei = () => {
         <StyledTitle>Julio Pavani Lozovei</StyledTitle>
 
         <p>
-          Nascido em Curitiba/PR em 24 de Março de 1997, é formado em
-          Análise e Desenvolvimento de Sistemas e pós graduado em IoT
-          pela universidade Positivo.
+          Nascido em Curitiba/PR em 24 de Março de 1997, é tecnólogo
+          em Gestão de Tecnologia da Informação pela Faculdade Santa
+          Cruz e pós-graduado em Sistemas Embarcados e IoT pela
+          Universidade Positivo.
         </p>
         <p>
           Atualmente é Engenheiro de Software, trabalhando como

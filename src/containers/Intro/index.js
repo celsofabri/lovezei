@@ -1,12 +1,14 @@
 import React from 'react';
 import { StyledWrapper } from 'assets/global/styled';
-import { StyledIntro, StyledLogo } from './styled';
+import { StyledIntro, StyledHeader, StyledLogo } from './styled';
 
 const Intro = () => {
   return (
     <StyledIntro>
       <StyledWrapper>
-        <StyledLogo>Julio Pavani Lozovei</StyledLogo>
+        <StyledHeader>
+          <StyledLogo>Julio Pavani Lozovei</StyledLogo>
+        </StyledHeader>
       </StyledWrapper>
     </StyledIntro>
   );

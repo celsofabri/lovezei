@@ -3,6 +3,7 @@ import Intro from 'containers/Intro';
 import About from 'containers/About';
 import Lozovei from 'containers/Lozovei';
 import Form from 'containers/Form';
+import Footer from 'components/Footer';
 import { StyledApp } from 'assets/global/styled';
 
 const App = ({ env }) => {
@@ -12,6 +13,7 @@ const App = ({ env }) => {
       <About />
       <Lozovei />
       <Form />
+      <Footer />
     </StyledApp>
   );
 };
