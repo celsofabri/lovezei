@@ -267,15 +267,19 @@ const Form = ({ env }) => {
             </StyledFormItem>
           </StyledFormGroup>
 
-          <TextArea
-            name="message"
-            onChange={(event) => {
-              setMessage(event.target.value);
-            }}
-            placeholder="Deixe uma mensagem"
-            value={message}
-            required
-          />
+          <StyledFormGroup>
+            <StyledFormItem>
+              <TextArea
+                name="message"
+                onChange={(event) => {
+                  setMessage(event.target.value);
+                }}
+                placeholder="Deixe uma mensagem"
+                value={message}
+                required
+              />
+            </StyledFormItem>
+          </StyledFormGroup>
           <div className="btn-group">
             <StyledButton type="submit">Inscrever-se</StyledButton>
           </div>

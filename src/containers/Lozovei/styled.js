@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from 'assets/global/tokens';
 
 export const StyledLozovei = styled.section`
   display: flex;
@@ -6,6 +7,7 @@ export const StyledLozovei = styled.section`
   flex-wrap: wrap;
   width: 100%;
   height: 100vh;
+  background-color: ${colors.gray};
 `;
 
 export const StyledLozoveiImage = styled.div`
