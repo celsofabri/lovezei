@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import FeedbackMessage from 'components/FeedbackMessage';
 import Input from 'components/Form/Input';
 import TextArea from 'components/Form/TextArea';
+import { masks } from 'helpers/masks';
 import {
   StyledWrapper,
   StyledTitle,
@@ -149,6 +150,7 @@ const Form = ({ env }) => {
             <StyledFormItem>
               <Input
                 name="fullname"
+                type="text"
                 onChange={(event) => {
                   setFullName(event.target.value);
                 }}
@@ -163,6 +165,7 @@ const Form = ({ env }) => {
             <StyledFormItem>
               <Input
                 name="email"
+                type="email"
                 onChange={(event) => {
                   setEmail(event.target.value);
                 }}
@@ -177,6 +180,7 @@ const Form = ({ env }) => {
             <StyledFormItem>
               <Input
                 name="city"
+                type="text"
                 onChange={(event) => {
                   setCity(event.target.value);
                 }}
@@ -188,6 +192,7 @@ const Form = ({ env }) => {
             <StyledFormItem>
               <Input
                 name="state"
+                type="text"
                 onChange={(event) => {
                   setState(event.target.value);
                 }}
@@ -202,8 +207,9 @@ const Form = ({ env }) => {
             <StyledFormItem>
               <Input
                 name="birthdate"
+                type="tel"
                 onChange={(event) => {
-                  setBirthdate(event.target.value);
+                  setBirthdate(masks.date(event.target.value));
                 }}
                 placeholder="Data de Nascimento"
                 value={birthdate}
@@ -213,6 +219,7 @@ const Form = ({ env }) => {
             <StyledFormItem>
               <Input
                 name="sign"
+                type="text"
                 onChange={(event) => {
                   setSign(event.target.value);
                 }}
@@ -228,22 +235,21 @@ const Form = ({ env }) => {
               <Input
                 name="whatsapp"
                 onChange={(event) => {
-                  setWhatsapp(event.target.value);
+                  setWhatsapp(masks.phone(event.target.value));
                 }}
                 placeholder="WhatsApp"
                 value={whatsapp}
-                required
               />
             </StyledFormItem>
             <StyledFormItem>
               <Input
                 name="telegram"
+                type="text"
                 onChange={(event) => {
                   setTelegram(event.target.value);
                 }}
                 placeholder="Telegram"
                 value={telegram}
-                required
               />
             </StyledFormItem>
           </StyledFormGroup>
@@ -252,23 +258,23 @@ const Form = ({ env }) => {
             <StyledFormItem>
               <Input
                 name="facebook"
+                type="text"
                 onChange={(event) => {
                   setFacebook(event.target.value);
                 }}
                 placeholder="Facebook"
                 value={facebook}
-                required
               />
             </StyledFormItem>
             <StyledFormItem>
               <Input
                 name="instagram"
+                type="text"
                 onChange={(event) => {
                   setInstagram(event.target.value);
                 }}
                 placeholder="Instagram"
                 value={instagram}
-                required
               />
             </StyledFormItem>
           </StyledFormGroup>
@@ -277,12 +283,12 @@ const Form = ({ env }) => {
             <StyledFormItem>
               <Input
                 name="twitter"
+                type="text"
                 onChange={(event) => {
                   setTwitter(event.target.value);
                 }}
                 placeholder="Twitter"
                 value={twitter}
-                required
               />
             </StyledFormItem>
           </StyledFormGroup>

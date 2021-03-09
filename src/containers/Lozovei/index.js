@@ -9,7 +9,7 @@ import ImgLozovei from 'assets/images/julio03.jpg';
 
 const Lozovei = () => {
   return (
-    <StyledLozovei>
+    <StyledLozovei id="julio">
       <StyledLozoveiImage>
         <img src={ImgLozovei} alt="Conheça o Julio Pavani Lozovei" />
       </StyledLozoveiImage>

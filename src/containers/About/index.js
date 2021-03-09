@@ -1,13 +1,10 @@
 import React from 'react';
-import {
-  StyledWrapper,
-  StyledTitle,
-  StyledButton
-} from 'assets/global/styled';
+import { StyledWrapper, StyledTitle } from 'assets/global/styled';
 import {
   StyledAbout,
   StyledAboutImage,
-  StyledAboutContent
+  StyledAboutContent,
+  StyledLink
 } from './styled';
 import ImgAbout from 'assets/images/julio06.jpg';
 
@@ -49,9 +46,12 @@ const About = () => {
             Conheça mais sobre o <strong>Julio</strong> e se inscreva
             no processo :)
           </p>
-          <StyledButton type="button">
+          <StyledLink
+            href="#julio"
+            title="Conheça mais sobre o Julio"
+          >
             Conheça mais sobre o Julio
-          </StyledButton>
+          </StyledLink>
         </StyledAboutContent>
       </StyledWrapper>
     </StyledAbout>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { colors } from 'assets/global/tokens';
 
-export const StyledSubscription = styled.div`
+export const StyledSubscription = styled.section`
   width: 100%;
   padding: 50px 0;
   text-align: center;
