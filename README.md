@@ -11,7 +11,7 @@ You need have `node 12+` installed in your machine.
 1. Clone this project:
 
 ```
-git clone git@github.com:celsofabri/pokedex.git
+git clone git@github.com:celsofabri/projeto-mozao-2021.git
 ```
 
 2. Install dependencies:
